@@ -1,0 +1,29 @@
+<div class="form-container">
+  <h2>Novo Cliente de Arquitetura</h2>
+
+  <form [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Nome Completo</mat-label>
+      <input matInput formControlName="name" placeholder="Ex: Marina Araujo">
+      @if (clientForm.get('name')?.invalid && clientForm.get('name')?.touched) {
+        <mat-error>O nome é obrigatório (mín. 3 letras).</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>E-mail</mat-label>
+      <input matInput formControlName="email" placeholder="email@exemplo.com">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Telefone</mat-label>
+      <input matInput formControlName="phone" placeholder="(00) 00000-0000">
+    </mat-form-field>
+
+    <div class="actions">
+      <button mat-raised-button color="primary" type="submit" [disabled]="clientForm.invalid">
+        SALVAR CLIENTE
+      </button>
+    </div>
+  </form>
+</div>
