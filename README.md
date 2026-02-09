@@ -1,59 +1,36 @@
-# ArchitectureManager
+# 🏛️ Architecture Manager - Gestão de Projetos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
+Este projeto é uma plataforma de gestão voltada para escritórios de Arquitetura e Engenharia, desenvolvida para organizar o fluxo de trabalho desde o cadastro de clientes até o detalhamento de ambientes e especialidades técnicas.
 
-## Development server
+O sistema nasceu da união entre a experiência em **Arquitetura e Urbanismo** (e as dores da falta de softwares específicos para essa área) e os estudos em **Engenharia de Software**, aplicando conceitos de arquitetura limpa e interfaces intuitivas.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🚀 Funcionalidades Atuais (Frontend)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Dashboard Inteligente**: Visão geral de projetos ativos e base de clientes com navegação rápida.
+- **Gestão de Projetos**: Listagem de projetos com status reativo (Planning, Executing, etc.).
+- **Fluxo de Clientes**: Formulário reativo para cadastro de novos clientes com validações em tempo real.
+- **Navegação SPA**: Sistema de rotas dinâmicas utilizando o Angular Router.
+- **Interface Moderna**: Desenvolvida com Angular Material para garantir consistência e acessibilidade.
 
-## Code scaffolding
+## 🛠️ Tecnologias Utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+| Camada | Tecnologia | Status |
+| :--- | :--- | :--- |
+| **Frontend** | Angular 18+, Signals, Standalone Components | Em Desenvolvimento |
+| **UI Design** | Angular Material, SCSS | Em Desenvolvimento |
+| **Backend** | Java, Spring Boot, Spring Data JPA | Em Desenvolvimento |
+| **Banco de Dados** | MySQL | Planejado |
 
-```bash
-ng generate component component-name
-```
+## 🏗️ Roadmap de Integração (Engenharia Reversa)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Atualmente, o frontend utiliza dados simulados (Mocks). O próximo passo é a integração com o backend desenvolvido no curso do Prof. Nélio Alves, adaptando o domínio de E-commerce para Gestão de Projetos:
 
-```bash
-ng generate --help
-```
+- **Client**: Adaptação da entidade `User`.
+- **Project**: Adaptação da entidade `Order`.
+- **Specialty**: Adaptação da entidade `Category`.
+- **Ambientes (Rooms)**: Adaptação da entidade `Product`.
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+Desenvolvido por **Marina Araujo** | [LinkedIn](https://www.linkedin.com/in/marina-araujo-6998b921) | [GitHub](https://github.com/marina-araujo)
